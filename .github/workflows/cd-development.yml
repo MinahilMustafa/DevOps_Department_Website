@@ -1,0 +1,17 @@
+name: CD Pipeline - Development
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    name: Deploy to Development Environment
+    runs-on: ubuntu-latest
+    environment: Development
+    steps:
+      - name: Trigger Render Deployment
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          echo "Deployment triggered on Render Development Environment."

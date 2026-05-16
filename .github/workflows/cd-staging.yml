@@ -1,0 +1,17 @@
+name: CD Pipeline - Staging/QA
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  deploy:
+    name: Deploy to Staging Environment
+    runs-on: ubuntu-latest
+    environment: Staging
+    steps:
+      - name: Trigger Render Deployment
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          echo "Deployment triggered on Render Staging Environment."

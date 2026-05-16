@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the expert faculty members of the Computer Science Department.">
+    <title>CS Department | Faculty</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faculty-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .faculty-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <span>CS Dept</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="faculty.html" class="active">Faculty</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 4rem 0;">
+            <h1>Our Faculty</h1>
+            <p>World-class educators and researchers leading the way in computer science.</p>
+        </section>
+
+        <section>
+            <div class="grid">
+                <div class="card faculty-card">
+                    <div class="faculty-img">JD</div>
+                    <h3>Dr. Jane Doe</h3>
+                    <p style="color: var(--primary-color); font-weight: 500; margin-bottom: 0.5rem;">Professor & Head of Department</p>
+                    <p><strong>Specialization:</strong> Artificial Intelligence & Machine Learning</p>
+                    <p><strong>Office Hours:</strong> Mon & Wed, 10:00 AM - 12:00 PM</p>
+                </div>
+                <div class="card faculty-card">
+                    <div class="faculty-img">JS</div>
+                    <h3>Dr. John Smith</h3>
+                    <p style="color: var(--primary-color); font-weight: 500; margin-bottom: 0.5rem;">Associate Professor</p>
+                    <p><strong>Specialization:</strong> Database Systems & Big Data</p>
+                    <p><strong>Office Hours:</strong> Tue & Thu, 2:00 PM - 4:00 PM</p>
+                </div>
+                <div class="card faculty-card">
+                    <div class="faculty-img">AW</div>
+                    <h3>Dr. Alice Wong</h3>
+                    <p style="color: var(--primary-color); font-weight: 500; margin-bottom: 0.5rem;">Assistant Professor</p>
+                    <p><strong>Specialization:</strong> Cyber Security & Cryptography</p>
+                    <p><strong>Office Hours:</strong> Wed & Fri, 11:00 AM - 1:00 PM</p>
+                </div>
+                <div class="card faculty-card">
+                    <div class="faculty-img">MR</div>
+                    <h3>Prof. Mark Richards</h3>
+                    <p style="color: var(--primary-color); font-weight: 500; margin-bottom: 0.5rem;">Lecturer</p>
+                    <p><strong>Specialization:</strong> Software Engineering & Web Development</p>
+                    <p><strong>Office Hours:</strong> Mon & Thu, 3:00 PM - 5:00 PM</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2026 Computer Science Department. All rights reserved.</p>
+            <p class="footer-text">Designed for excellence.</p>
+        </div>
+    </footer>
+</body>
+</html>
